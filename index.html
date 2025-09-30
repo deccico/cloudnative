@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cloud-native.ai — Community for Cloud + AI Builders</title>
+  <meta name="description" content="Meet practitioners who build, ship and operate AI workloads the cloud‑native way. Talks, demos and real‑world lessons." />
+  <link rel="canonical" href="https://cloud-native.ai/" />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="cloud-native.ai — Community for Cloud + AI Builders" />
+  <meta property="og:description" content="Talks, demos and real‑world lessons for running AI on cloud‑native platforms." />
+  <meta property="og:url" content="https://cloud-native.ai/" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="cloud-native.ai — Community for Cloud + AI Builders" />
+  <meta name="twitter:description" content="Talks, demos and real‑world lessons for running AI on cloud‑native platforms." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "cloud-native.ai",
+    "url": "https://cloud-native.ai/",
+    "description": "Meet practitioners who build, ship and operate AI workloads the cloud‑native way.",
+    "sameAs": ["https://www.meetup.com/cloud-native-ai/"],
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sydney",
+        "addressCountry": "AU"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* Minimal critical CSS for fast first paint; full styles in style.css */
+    :root { --bg: #0b1020; --fg: #e5e7eb; --muted:#9ca3af; --brand: #4f46e5; --accent:#22c55e; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color: var(--fg); background: radial-gradient(1200px 600px at 80% -10%, rgba(79,70,229,0.25), transparent), radial-gradient(900px 500px at -10% 10%, rgba(34,197,94,0.2), transparent), var(--bg); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { position: fixed; left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem; background: #111827; color: #fff; border-radius: .5rem; z-index: 1000; }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(10px); background: rgba(11,16,32,0.7); border-bottom: 1px solid rgba(255,255,255,0.06); z-index: 50; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { display: inline-flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.05rem; letter-spacing: .2px; }
+    .brand img { width: 28px; height: 28px; }
+    nav ul { display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0; }
+    nav a { padding: .5rem .75rem; border-radius: .5rem; color: var(--muted); }
+    nav a[aria-current="page"], nav a:hover { color: #fff; background: rgba(255,255,255,0.06); }
+    .cta { display: inline-flex; align-items: center; gap: .5rem; background: linear-gradient(90deg, var(--brand), var(--accent)); color: white; padding: .7rem .95rem; border-radius: .6rem; font-weight: 600; }
+    .cta:hover { opacity: .95; transform: translateY(-1px); }
+    .hero { padding: 72px 0 28px; }
+    .hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; margin: 0 0 12px; }
+    .hero p.lede { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--muted); max-width: 58ch; }
+    .badges { display:flex; gap:.75rem; flex-wrap: wrap; margin: 18px 0 0; }
+    .badge { font-size: .9rem; color: #cbd5e1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); padding: .4rem .6rem; border-radius: .5rem; }
+    section { padding: 56px 0; border-top: 1px solid rgba(255,255,255,0.06); }
+    h2 { font-size: clamp(1.4rem, 2.8vw, 2rem); margin: 0 0 14px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
+    .card { grid-column: span 6; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: .8rem; padding: 16px; }
+    .topics .card { grid-column: span 4; }
+    .muted { color: var(--muted); }
+    .events .event-empty { color: var(--muted); font-style: italic; }
+    footer { padding: 56px 0; color: #9aa0a6; }
+    @media (max-width: 960px) {
+      .card, .topics .card { grid-column: span 12; }
+      .nav ul { display:none; }
+      .menu-toggle { display: inline-flex; align-items:center; justify-content:center; width: 42px; height: 42px; border-radius:.6rem; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.04); }
+      .nav.open ul { display:flex; position: absolute; right:20px; top:58px; background: rgba(11,16,32,0.95); border: 1px solid rgba(255,255,255,0.1); border-radius:.8rem; padding: .5rem; flex-direction: column; width: min(90vw, 320px); }
+      nav a { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <div class="container nav" id="site-nav">
+      <a href="/" class="brand" aria-label="cloud-native.ai home">
+        <img src="assets/logo.svg" alt="" role="presentation" />
+        <span>cloud-native.ai</span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      </button>
+      <nav aria-label="Primary">
+        <ul id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a class="cta" href="https://www.meetup.com/cloud-native-ai/" target="_blank" rel="noopener">Join the Meetup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="badges">
+          <span class="badge">Sydney, Australia</span>
+          <span class="badge">Community &amp; Events</span>
+          <span class="badge">Kubernetes • MLOps • GenAI</span>
+        </div>
+        <h1>Build, ship &amp; operate AI workloads the cloud‑native way.</h1>
+        <p class="lede">A practitioner‑first community where developers, platform engineers and data teams swap hard‑won lessons, demos and code for running AI in production.</p>
+        <p class="lede">
+          <a class="cta" href="https://www.meetup.com/cloud-native-ai/" target="_blank" rel="noopener" aria-label="Join the cloud-native.ai Meetup on meetup dot com">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm.75 15h-1.5v-6h1.5Zm0-8h-1.5V7h1.5Z"/></svg>
+            Join the Meetup
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container grid">
+        <div class="card" style="grid-column: span 7;">
+          <h2>What is cloud‑native.ai?</h2>
+          <p>We’re a community focused on the intersection of <strong>Cloud Native</strong> and <strong>AI</strong> — from model serving on Kubernetes to observability, security, cost control and data pipelines. We aim to be vendor‑neutral, open‑source friendly and hands‑on.</p>
+          <ul>
+            <li>Short talks, live demos and panel Q&amp;A</li>
+            <li>Real‑world patterns for inference, RAG and agents</li>
+            <li>Platform engineering for AI workloads</li>
+            <li>Networking with builders and operators</li>
+          </ul>
+        </div>
+        <aside class="card" style="grid-column: span 5;">
+          <h3>New here?</h3>
+          <p class="muted">We host events in Sydney and share materials online. The fastest way to stay in the loop is to join the group on Meetup.</p>
+          <p><a class="cta" href="https://www.meetup.com/cloud-native-ai/" target="_blank" rel="noopener">Join on Meetup</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="events" class="events">
+      <div class="container">
+        <h2>Upcoming events</h2>
+        <div id="events-list" class="grid" aria-live="polite">
+          <p class="event-empty">No upcoming events scheduled yet. Check back soon or see all events on <a href="https://www.meetup.com/cloud-native-ai/" target="_blank" rel="noopener">Meetup</a>.</p>
+        </div>
+        <p class="muted">Want to speak or host? <a href="#contact" id="propose-talk">Propose a talk</a>.</p>
+      </div>
+    </section>
+
+    <section id="topics" class="topics">
+      <div class="container">
+        <h2>Topics we cover</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Model serving &amp; orchestration</h3>
+            <p class="muted">KServe, vLLM, Ray Serve, Knative, autoscaling and GPU scheduling.</p>
+          </article>
+          <article class="card">
+            <h3>RAG &amp; vector systems</h3>
+            <p class="muted">Embeddings, retrieval patterns, vector databases, latency &amp; quality trade‑offs.</p>
+          </article>
+          <article class="card">
+            <h3>Data &amp; MLOps pipelines</h3>
+            <p class="muted">Feature stores, CI/CD for models, model registries and drift monitoring.</p>
+          </article>
+          <article class="card">
+            <h3>Observability</h3>
+            <p class="muted">OpenTelemetry, tracing GenAI, prompt and token cost visibility.</p>
+          </article>
+          <article class="card">
+            <h3>Security &amp; governance</h3>
+            <p class="muted">SBOM, supply chain security, secrets, isolation and responsible AI.</p>
+          </article>
+          <article class="card">
+            <h3>Platform engineering</h3>
+            <p class="muted">Internal developer platforms, golden paths and self‑service for AI teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="container grid">
+        <div class="card" style="grid-column: span 12;">
+          <h2>Partners &amp; sponsors</h2>
+          <p class="muted">We’re grateful for venue hosts and sponsors who support the community. Interested? Ask about slots for talks, demos or venue hosting.</p>
+          <div class="grid" style="margin-top:6px;">
+            <div class="card" aria-label="Your logo here" style="grid-column: span 3; min-height:84px; display:flex; align-items:center; justify-content:center;">
+              <img src="assets/logo.svg" alt="Sponsor logo placeholder" style="width:56px;height:56px;opacity:.6" />
+            </div>
+            <div class="card" style="grid-column: span 3; min-height:84px; display:flex; align-items:center; justify-content:center;">
+              <img src="assets/logo.svg" alt="Sponsor logo placeholder" style="width:56px;height:56px;opacity:.6" />
+            </div>
+            <div class="card" style="grid-column: span 3; min-height:84px; display:flex; align-items:center; justify-content:center;">
+              <img src="assets/logo.svg" alt="Sponsor logo placeholder" style="width:56px;height:56px;opacity:.6" />
+            </div>
+            <div class="card" style="grid-column: span 3; min-height:84px; display:flex; align-items:center; justify-content:center;">
+              <img src="assets/logo.svg" alt="Sponsor logo placeholder" style="width:56px;height:56px;opacity:.6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid">
+        <div class="card" style="grid-column: span 7;">
+          <h2>Code of conduct</h2>
+          <p class="muted">Be kind. Be respectful. No harassment. Keep it inclusive and welcoming for everyone. Organizers may remove anyone who violates this standard.</p>
+        </div>
+        <aside class="card" style="grid-column: span 5;">
+          <h3>Get in touch</h3>
+          <p class="muted">The simplest way to reach us is via Meetup.</p>
+          <p><a class="cta" href="https://www.meetup.com/cloud-native-ai/" target="_blank" rel="noopener">Message via Meetup</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> cloud-native.ai — A community of practitioners in Sydney, Australia.</p>
+      <p class="muted">Not affiliated with CNCF. Trademarks belong to their respective owners.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
