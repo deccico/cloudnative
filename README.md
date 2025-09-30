@@ -20,12 +20,12 @@ Edit `data/events.json` and add entries like:
 ```json
 [
   {
-    "title": "Cloud Native AI: Real-World RAG on Kubernetes",
+    "title": "Cloud Native AI",
     "start": "2025-11-12T18:00:00+11:00",
     "end": "2025-11-12T20:30:00+11:00",
     "location": "Sydney CBD",
     "mode": "In person",
-    "summary": "Talks + demos on vector db choices, KServe vs vLLM, and costs.",
+    "summary": "Talks + demos on Cloud Native Technologies and AI",
     "url": "https://www.meetup.com/cloud-native-ai/"
   }
 ]
